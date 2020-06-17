@@ -29,7 +29,7 @@ type RecordsByDate = {
   [date: string]: DailyChangeRecord;
 };
 
-/* The following is the example of 'records':
+/* The following is an example of 'records':
  * [
  *  [ 'ALL', '2020-02-15', '-1', '4', '7', '1', '4', '0' ].
  *  [ 'ALL', '2020-02-16', '-9', '-6', '-35', '-10', '-2', '2' ],
@@ -108,7 +108,7 @@ const processRecords = async (
         record.shift(); // Skip country_region
         let area = record.shift(); // Get sub_region_1
         if (area === '') area = 'ALL';
-        record.shift(); // Skip
+        record.shift(); // Skip sub_region_2
 
         return [area, ...record]; // e.g. [ 'ALL', '2020-02-15', '-1', '4', '7', '1', '4', '0' ]
       },
