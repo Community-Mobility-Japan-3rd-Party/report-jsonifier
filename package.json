@@ -1,0 +1,34 @@
+{
+  "name": "report-jsonifier",
+  "version": "1.0.0",
+  "description": "Converts COVID-19 Community Mobility Reports of Japan by Google into csv files",
+  "author": {
+    "name": "Community Mobility Japan 3rd Party",
+    "email": "contact@3rd-party.site",
+    "url": "https://github.com/Community-Mobility-Japan-3rd-Party"
+  },
+  "homepage": "https://github.com/Community-Mobility-Japan-3rd-Party/report-jsonifier",
+  "bugs": "https://github.com/Community-Mobility-Japan-3rd-Party/report-jsonifier/issues",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "main": "src/index.ts",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parse": "^4.10.1"
+  },
+  "engines": {
+    "node": "^12.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.13",
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "@typescript-eslint/parser": "^3.3.0",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  }
+}
